@@ -11,8 +11,8 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
-- What is the value of obj? // answer
+- `[10] === [10]`//false address are different.
+- What is the value of obj? //{ surname: 'Stark' }
 - `obj == newObj`//false address are different.
 - `obj === newObj`//false address are different.
 - `user === newObj`//false address are different.
@@ -24,7 +24,7 @@ Answer the following with reason after going through the above code:
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
 <!-- To add this image here use ![name](./hello.jpg) -->
-
+![capup](./capup.PNG)
 ```js
 function personDetails(person) {
   person.age = 25;
@@ -33,8 +33,8 @@ function personDetails(person) {
 }
 var person1 = { name: 'Alex', age: 30 };
 var person2 = personDetails(person1);
-console.log(person1);
-console.log(person2);
+console.log(person1);//{name: "John", age: 50}
+console.log(person2);//{name: "Alex", age: 25}
 ```
 
 3. What will be the output of the below code:
@@ -46,6 +46,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //true
+console.log(user.brothers.length === brothers.length); //true
 ```
