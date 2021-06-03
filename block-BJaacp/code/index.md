@@ -13,13 +13,13 @@ Answer the following with reason after going through the above code:
 
 - `[10] === [10]`
 - What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
-- `user === newObj`
-- `user == newObj`
-- `user == obj`
-- `arr == arr2`
-- `arr === arr2`
+- `obj == newObj`//false address are different.
+- `obj === newObj`//false address are different.
+- `user === newObj`//false address are different.
+- `user == newObj`//false address are different.
+- `user == obj`// true address are same
+- `arr == arr2`//true address are same
+- `arr === arr2`//true address are same
 
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
